@@ -32,7 +32,7 @@ def verify(m: bytes, r: int, s: int, y: int, p: int, q: int, g: int):
 def main():
     q, h = 101, 3
     p = 7879
-    m = 'Hello LZU'.encode()
+    m = 'Digital signature'.encode()
     print('m = {}'.format(m))
     g, x, y = gen_key(p, q, h)
     k = random.randrange(0, q)
